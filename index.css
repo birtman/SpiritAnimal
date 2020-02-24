@@ -1,0 +1,172 @@
+body {
+  font-family: "Montserrat";
+  background-color: #c6ecc7;
+  color: white;
+}
+
+.jumbotron {
+  background-image: url("/Wildschwein.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 900;
+  padding: 10%;
+}
+
+h1 {
+  font-size: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+
+#header {
+  background-color: black;
+  padding: 30px 10px;
+  color: #c6ecc7;
+  text-align: center;
+  font-size: 8vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  z-index: 100;
+}
+
+.header__text span {
+  color: #ff1d43;
+  text-transform: uppercase;
+  font-size: 2vw;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+}
+
+#about .first__p {
+  color: #ff1d43;
+  padding-bottom: 5%;
+}
+
+#about p {
+  color: black;
+  font-size: 2.5vw;
+  padding-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 3.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  #about p {
+    font-size: 4vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2.3rem;
+  }
+}
+
+#about h2 {
+  margin-bottom: 15%;
+  margin-top: 30%;
+  font-weight: 900;
+  margin-left: 5%;
+  margin-right: 10%;
+  text-align: left;
+  font-size: 6vw;
+}
+
+@media screen and (max-width: 700px) {
+  #about h2 {
+    font-size: 10vw;
+    margin-top: 45%;
+  }
+}
+
+#animation span {
+  animation: 4s infinite;
+  animation-name: slidein;
+  font-size: 30vw;
+  color: #ff1d43;
+  font-weight: 900;
+}
+
+@keyframes slidein {
+  0% {
+    width: 300%;
+    color: #ff1d43;
+  }
+
+  50% {
+    width: 10%;
+    color: #c6ecc7;
+    font-weight: 900;
+  }
+
+  100% {
+    width: 300%;
+  }
+}
+
+h2 {
+  animation: 7s ease-in-out infinite;
+  animation-name: fadein;
+  color: #ff1d43;
+  opacity: 1;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: 900;
+}
+
+@keyframes fadein {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  30%,
+  80% {
+    opacity: 1;
+  }
+}
+
+#animation {
+  background-color: black;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #c6ecc7;
+}
+
+footer .text {
+  display: inline-block;
+  position: relative;
+  top: 35px;
+  text-align: center;
+  left: 30px;
+  color: #ff1d43;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+footer span {
+  color: #c6ecc7;
+  text-transform: none;
+  padding-left: 10px;
+  font-weight: 400;
+}
